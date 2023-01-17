@@ -1,0 +1,281 @@
+*{
+
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+  font-family: 'poppins' , sans-serif;
+
+
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: skyblue;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(Camping.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  
+}
+
+nav{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+
+}
+
+.logo{
+  width: 140px;
+  cursor:pointer;
+}
+
+.nav-links li{
+  list-style:  none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.nav-links li a{
+  text-decoration: none;
+  color : #fff;
+
+}
+
+.nav-links li a:hover{
+  background-color:  black;
+  transition: background-color 1s;
+} 
+
+.register:hover{
+  transition: background-color 0.5s;
+}
+
+.register{
+  background: #fff;
+  padding : 7px 20px;
+  border-radius: 20 px; 
+  text-decoration: none;  
+  font-size: 15px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.container {
+  padding: 0 7%;
+  text-align: top;
+  
+}
+
+.header h1{
+  font-size: 4vw;
+  font-weight : 500;
+  color: #fff;
+  text-align : center;
+  padding-top: 22%;
+
+}
+
+.search-bar{
+    background : #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding : 6px 10px 6px 30px;
+    border-radius: 50px; 
+}
+
+.search-bar form {
+  display : flex;
+  align-items : center;
+  flex-wrap: wrap; 
+
+}
+
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background-color: transparent; 
+}
+
+.search-bar form button {
+  background: #ff5361;
+  width : 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-bar form button img{
+  width: 15px;
+  margin-top: 7px;
+}
+
+.location-input{
+  flex : 1;
+}
+
+/* -----exclusives----------- */
+
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+
+}
+
+.exclusives{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ grid-gap: 30px;
+
+}
+
+.exclusives div img{
+  width : 100%;
+  border-radius: 10px;
+}
+
+.exclusives div{
+  position : relative;
+}
+
+.exclusives div span{
+  position: absolute;
+  top :50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color : white;
+
+}
+
+/** Most Visited Places **/
+.trending{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(200px , 1 fr));
+  grid-gap: 30px;
+  margin-bottom : 30px;
+
+}
+.trending div img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.trending h3{
+  font-weight : 600;
+  margin-top : 10px;
+
+}
+
+.cta{
+  margin: 80px 0;
+  background-image : linear-gradient(to right , rgb(5, 5, 53), transparent), url('banner-2.png'); 
+  background-size : cover;
+  background-position : center;
+  border-radius : 10px;
+  padding: 5%;
+  color: #fff; 
+}
+
+.cta h3 {
+  font-size: 4vw;
+  line-height: 5.4vw;
+  font-weight: 5;
+}
+
+.cta p{
+  font-size : 20px;
+  margin: 10px 0;
+}
+
+a {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: .50rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.register {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.register:hover {opacity: 1}
+
+
+/**Footer**/
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: Black;
+  color: white;
+}
+
+/** Button Tag Styling **/
+
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  padding: 10;
+  background: #009578;
+  border:  none;
+  outline : none;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+}
+
+
+.button__text,
+.button__icon{
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+
+}
+
+.button:hover{
+ background: #008168;
+
+}
+
+.button:active{
+  background: #006e58;
+
+}
+
+.button__icon{
+  font-size: 1.5rem;
+  background: rgba(0,0,0,0.08);
+}
+
+.center{
+  text-align: center;
+}
